@@ -1,6 +1,12 @@
-(ns sire-api.core)
+(ns sire-api.core
+  (:gen-class)
+  (:require
+    [com.stuartsierra.component :as component]
+    [sire-api.systems :refer [prod-system]]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn -main
+  "Start a production system."
+  [& args]
+  (if (nil? (first args))
+    (throw (ex-info "Provide the http port on first argument when executing production enviorment" {}))
+    (component/start (prod-system (read-string (first args))))))

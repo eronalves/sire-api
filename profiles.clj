@@ -1,5 +1,6 @@
 { :dev {:dependencies [[org.clojure/tools.namespace "0.2.11"]
                        [clansi "1.0.0"]
+                       [ring/ring-mock "0.3.0"]
                        [midje "1.8.3"]
                        [reloaded.repl "0.2.3"]]
         :plugins [[lein-midje "3.2.1"]

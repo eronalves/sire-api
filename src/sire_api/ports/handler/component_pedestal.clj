@@ -1,4 +1,4 @@
-(ns sire-api.ports.handler.pedestal-component
+(ns sire-api.ports.handler.component-pedestal
   "Connection between the Component framework and the Pedestal web
   application server."
   (:require [com.stuartsierra.component :as component]
