@@ -2,7 +2,7 @@
 
 An application to execute pull requests workflows with a yaml configuration file to execute automated tests and run apps with docker. 
 
-![SHIPPING](https://media.giphy.com/media/bZBmitwUwKtDa/giphy.gif)
+![SHIPPING](https://raw.githubusercontent.com/eronalves/sire-api/master/doc/ship-sea.gif)
 
 ## Summary
 
