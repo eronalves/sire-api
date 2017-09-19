@@ -2,6 +2,8 @@
 
 An application to execute pull requests workflows with a yaml configuration file to execute automated tests and run apps with docker. 
 
+![SHIPPING](https://media.giphy.com/media/bZBmitwUwKtDa/giphy.gif)
+
 ## Summary
 
 The objective is practice clojure knowledge while create a little complex application to manage PRs test workflows (automated tests, black box and others).
