@@ -1,4 +1,4 @@
-## Sire API [![CircleCI](https://circleci.com/gh/eronalves/sire-api.svg?style=svg&circle-token= e85a2801c8093eb408985d2ddbddaa4816cb7000)](https://circleci.com/gh/eronalves/sire-api) [![codecov](https://codecov.io/gh/eronalves/sire-api/branch/master/graph/badge.svg)](https://codecov.io/gh/eronalves/sire-api)
+## Sire API [![CircleCI](https://circleci.com/gh/eronalves/sire-api.svg?style=svg&circle-token=e85a2801c8093eb408985d2ddbddaa4816cb7000)](https://circleci.com/gh/eronalves/sire-api) [![codecov](https://codecov.io/gh/eronalves/sire-api/branch/master/graph/badge.svg)](https://codecov.io/gh/eronalves/sire-api)
 
 An application to execute pull requests workflows with a yaml configuration file to execute automated tests and run apps with docker. 
 
