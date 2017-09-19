@@ -1,9 +1,7 @@
 (ns sire-api.systems
   (:require [com.stuartsierra.component :as component]
-            [reloaded.repl :as repl :refer [init start stop go reset]]
             [sire-api.ports.handler.pedestal-config :as pedestal-config]
             [sire-api.ports.handler.component-pedestal :as pedestal-component]
-
             [sire-api.ports.handler.routes :as routes]))
 
 (defn default-system [env]
