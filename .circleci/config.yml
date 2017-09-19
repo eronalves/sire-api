@@ -10,8 +10,8 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: 
-          -sire-api-{{ checksum "project.clj" }}
+          keys:
+          - sire-api-{{ checksum "project.clj" }}
           # fallback to using the latest cache if no exact match is found
           - sire-api-
       - run: lein deps
@@ -20,7 +20,7 @@ jobs:
             - ~/.m2
           key: sire-api-{{ checksum "project.clj" }}
       - run: lein do clean, midje, uberjar, cloverage --codecov
-      - run: curl -s https://codecov.io/bash | bash -s - -t 5f83a5d8-79f5-4497-b912-6bd0dcbf9587 -f target/coverage/codecov.json
+      - run: curl -s https://codecov.io/bash | bash -s - -t c2bf578e-307f-4688-96b7-8624f44d33e9 -f target/coverage/codecov.json
 
       - store_artifacts:
           path: target/coverage
