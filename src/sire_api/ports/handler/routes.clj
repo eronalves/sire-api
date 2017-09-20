@@ -31,9 +31,9 @@
 
 (defroutes routes
   [[["/" {:get home} ^:interceptors [(body-params)]
-
-    ["/pull-requests" {:get all-pull-requests} ^:interceptors [(using-component :controller)]
-     ["/:id" {:get get-pull-request}
-      ["/run" {:post run-pull-request}]
-      ["/stop" {:post stop-pull-request}]]]]]])
+    ["/api/v1"
+      ["/pull-requests" {:get all-pull-requests} ^:interceptors [(using-component :controller)]
+       ["/:id" {:get get-pull-request}
+        ["/run" {:post run-pull-request}]
+        ["/stop" {:post stop-pull-request}]]]]]]])
 
