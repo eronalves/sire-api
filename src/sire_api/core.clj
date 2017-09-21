@@ -7,7 +7,6 @@
 (defn -main
   "Start a production system."
   [& args]
-  (println "chegou" args)
   (if (nil? (first args))
     (throw (ex-info "Provide the http port on first argument when executing production enviorment" {}))
     (component/start (prod-system {:port (read-string (first args))}))))
